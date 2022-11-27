@@ -14,15 +14,15 @@ namespace lab1ex5
             Console.WriteLine("Introduceti al doilea numar:");
             int y = int.Parse(Console.ReadLine());
 
-            if (x > y)
-            { 
-                Console.WriteLine("Numbers in order: "+ y + ' ' + x);
-            }
-            else if (x < y)
+
+            Console.WriteLine("Numerele in ordine crescatoare:");
+            int[] numereleMele = { x, y};
+            Array.Sort(numereleMele);
+            foreach (int i in numereleMele)
             {
-                Console.WriteLine("Numbers in order: "+ x + ' ' + y);
-            }    
-          
+                Console.WriteLine(i);
+            }
+
 
         }
     }
